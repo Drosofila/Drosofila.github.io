@@ -1,0 +1,113 @@
+header{
+    background: #10133A;
+}
+
+html{
+    background: #10133A;
+}
+
+.box{
+    width: 940px;
+    position:relative;
+    margin: 0 auto;
+}
+
+.prof{
+    scale: 48%;
+    position: relative;
+    display:block;
+    margin-left: auto;
+    border: 6px solid #DC281E;
+    border-radius: 6px;
+}
+
+.name{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: monospace;
+    color: #DC281E;
+    text-decoration: none;
+    font-size: 18pt;
+    position: absolute;
+    display: inline-block;
+    margin: 110px auto auto 410px;
+}
+
+.atributes{
+    font-family: monospace;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 10pt;
+    position: absolute;
+    display: inline-block;
+    margin: 150px auto auto 410px;
+    width: 240px
+}
+
+.atributes li{
+    margin: 20px 0 0 0;
+    text-align: right;
+    line-height: normal;
+}
+
+.cvtext{
+    width: 390px;
+    position: absolute;
+    left: 380px;
+    text-align: left;
+    display: inline-block;
+}
+
+.cvtextrh{
+    width: 390px;
+    position: absolute;
+    right: 380px;
+    text-align: right;
+    display: inline-block;
+}
+
+.Title{
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: monospace;
+    color: #DC281E;
+    text-decoration: none;
+    line-height: normal;
+    margin: 0px auto 15px auto;
+}
+
+.topics{
+    font-size: 12pt;
+    font-family: monospace;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: normal;
+}
+
+.topics li{
+    margin: 0 0 10px 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 30px;
+    
+}
+
+nav a{
+    
+    font-weight: bold;
+    font-family: monospace;
+    color: #DC281E;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.contact{
+    width:940px;
+    position: relative;
+    top: 300px;
+    bottom: 100px;
+    left: 470px;
+}

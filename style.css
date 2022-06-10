@@ -1,0 +1,50 @@
+.logo{
+    scale: 70%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.box{
+    width: 940px;
+    position:relative;
+    margin: 0 auto;
+}
+
+header{
+    background: #10133A;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 30px;
+    
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: monospace;
+    color: #DC281E;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+nav{
+    position: absolute;
+    top: 120px;
+    right: 100px;
+}
+
+html{
+    background: #10133A;
+}
+
+.intro{
+    font-family: monospace;
+    color: #DC281E;
+    font-size: 12pt;
+    text-decoration: none;
+    position: relative;
+    margin: 100px auto;
+}

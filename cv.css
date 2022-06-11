@@ -7,18 +7,29 @@ html{
 }
 
 .box{
+    display:inline-block;
     width: 940px;
     position:relative;
-    margin: 0 auto;
+    margin: 50 auto 50 auto;
 }
 
 .prof{
     scale: 48%;
     position: relative;
     display:block;
-    margin-left: auto;
+    margin-left: 988px;
+    margin-right: auto;
     border: 6px solid #DC281E;
     border-radius: 6px;
+}
+
+.proftxt{
+    width:340px;
+    display: inline-block;
+    position:absolute;
+    left: auto;
+    right:0px;
+    
 }
 
 .name{
@@ -28,9 +39,10 @@ html{
     color: #DC281E;
     text-decoration: none;
     font-size: 18pt;
-    position: absolute;
-    display: inline-block;
-    margin: 110px auto auto 410px;
+    text-align: right;
+    position:absolute;
+    right: -110px;
+    margin-top:110px;
 }
 
 .atributes{
@@ -38,10 +50,11 @@ html{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 10pt;
-    position: absolute;
-    display: inline-block;
-    margin: 150px auto auto 410px;
-    width: 240px
+    text-align: right;
+    width:370px;
+    position:absolute;
+    right:-110px;
+    margin-top:140px;
 }
 
 .atributes li{
@@ -50,22 +63,41 @@ html{
     line-height: normal;
 }
 
-.cvtext{
-    width: 390px;
+.cvtextbox{
+    width: 940px;
     position: absolute;
     left: 380px;
     text-align: left;
     display: inline-block;
 }
 
-.cvtextrh{
-    width: 390px;
+.cvtextbox2{
+    width: 940px;
     position: absolute;
-    right: 380px;
-    text-align: right;
+    left: 380px;
+    top:700px;
+    text-align: left;
     display: inline-block;
 }
 
+.lhtxt{
+    width: 410px;
+    display: inline-block;
+    position: absolute;
+    margin: auto auto auto 30px;
+    text-align: left;
+    text-align: top;
+}
+
+.rhtxt{
+    width: 410px;
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    margin: 0px 30px auto auto;
+    text-align: right;
+    left: 440px;
+}
 .Title{
     font-size: 14pt;
     text-transform: uppercase;
@@ -106,8 +138,9 @@ nav a{
 
 .contact{
     width:940px;
-    position: relative;
-    top: 300px;
-    bottom: 100px;
-    left: 470px;
+    position: absolute;
+    top:940px;
+    bottom: 30px;
+    left: 400px;
+    padding: 70px;
 }

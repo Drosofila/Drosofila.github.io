@@ -48,3 +48,40 @@ html{
     position: relative;
     margin: 100px auto;
 }
+
+nav a:hover{
+    color: #FFFFFF;
+}
+
+
+
+
+
+footer a:hover{
+    color: #FFFFFF;
+}
+
+
+footer a{
+    background:#10133A;
+    font-weight: bold;
+    font-family: monospace;
+    color: #DC281E;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+footer li{
+    display: inline;
+    margin: 0 0 0 30px;
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    top:auto;
+    bottom:50px;
+    left:auto;
+    right:auto;
+}

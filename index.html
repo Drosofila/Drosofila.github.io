@@ -7,6 +7,7 @@
     <title>Drosofila</title>
     <link rel="stylesheet" href="reset.css" >
     <link rel="stylesheet" href="style.css" >
+    <script src="main.js"></script> 
 </head>
 
 <body>
@@ -17,7 +18,16 @@
                     <ul>
                         <li> <a href="index.html"> Home</a></li>
                         <li><a href="augsys.html">Research</a></li>
-                        <li><a href="maps.html">Maps</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Maps</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="maps.html">EGNOS</a>
+                                  <!-- <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a> -->
+                                </div>
+                            </div> 
+                        </li>
                         <li><a href="cv.html">Who am I?</a></li>
                     </ul> 
                 </nav>   
@@ -28,10 +38,12 @@
  
     <main>
         <div class="box">
-            <par class="intro">
+            <div class="intro">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum ornare gravida. Nunc commodo orci accumsan nisl imperdiet, vitae interdum nisl cursus. Donec magna urna, iaculis lacinia est a, aliquet consequat lorem. Pellentesque sit amet nulla tincidunt, ultrices lectus suscipit, sodales urna. Phasellus at leo a massa scelerisque semper. Curabitur sit amet eros et turpis venenatis efficitur. Aenean sit amet mauris est. 
-            </par>
+            </div>
         </div>
+
+
     </main>
 
     <footer>

@@ -6,30 +6,38 @@ html{
     background: #10133A;
 }
 
-.box{
-    display:inline-block;
+h1{
     width: 940px;
-    position:relative;
-    margin: 50 auto 50 auto;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.boxheader{
+    width: 940px;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .prof{
-    scale: 48%;
+    scale: 0.4;
+    margin-left: auto;
+    margin-right: 100px;
     position: relative;
-    display:block;
-    margin-left: 900px;
-    margin-right: auto;
+    left: 320px;
     border: 8px solid #DC281E;
     border-radius: 6px;
+    display: inline-block;
 }
 
 .proftxt{
     width:340px;
+    height: 180px;
     display: inline-block;
-    position:absolute;
-    left: auto;
-    right:0px;
-    
+    position: relative;
+    top:-170px;
+    left: 410px;
 }
 
 .name{
@@ -40,9 +48,6 @@ html{
     text-decoration: none;
     font-size: 18pt;
     text-align: right;
-    position:absolute;
-    right: -30px;
-    margin-top:110px;
 }
 
 .atributes{
@@ -51,10 +56,6 @@ html{
     text-decoration: none;
     font-size: 10pt;
     text-align: right;
-    width:370px;
-    position:absolute;
-    right:-30px;
-    margin-top:140px;
 }
 
 .atributes li{
@@ -65,32 +66,30 @@ html{
 
 
 .bloco{
-    width:60%;
-    position: absolute;
-    right:auto;
-    left:6%;
-    display: inline-block;
+    width:940px;
+    height: 1200px;
+    margin-left:auto;
+    margin-right:auto;
     text-align: center;
 }
 
 
 .cvtextbox{
-    width: 100%;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    bottom:auto;
+    width: 940px;
+    height: 370px;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
     text-align: left;
     display: inline-block;
 }
 
 .cvtextbox2{
-    width: 100%;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    top:320px;
-    bottom:auto;
+    width: 940px;
+    height: 370px;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
     text-align: left;
     display: inline-block;
 }
@@ -99,9 +98,8 @@ html{
     width: 410px;
     display: inline-block;
     position: absolute;
-    margin: auto auto auto 30px;
+    margin: auto auto auto auto;
     text-align: left;
-    text-align: top;
 }
 
 .rhtxt{
@@ -109,9 +107,8 @@ html{
     display: inline-block;
     position: absolute;
     top:0px;
-    margin: 0px 30px auto auto;
+    margin: auto auto auto 530px;
     text-align: right;
-    left: 440px;
 }
 
 .Title{

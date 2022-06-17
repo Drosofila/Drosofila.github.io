@@ -1,14 +1,19 @@
 .logo{
-    scale: 50%;
+    width:128px;
+    height:auto;
     position: relative;
-    left: 0px;
-    top: 0px;
+    left: 50px;
+    top: 30px;
+    display: inline-block;
 }
 
 .box{
     width: 940px;
+    height: 200px;
     position:relative;
-    margin: 0 auto;
+    display: block;
+    margin-left:auto;
+    margin: auto;
 }
 
 header{
@@ -31,9 +36,12 @@ nav a{
 }
 
 nav{
-    position: absolute;
-    top: 120px;
-    right: 100px;
+    width: 460;
+    height: 60;
+    position: relative;
+    top: -60px;
+    left:450px;
+    display: inline-block;
 }
 
 html{

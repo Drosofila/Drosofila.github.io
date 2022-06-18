@@ -169,3 +169,52 @@ footer{
     left:auto;
     right:auto;
 }
+
+/*footer dropup*/
+
+.dropbtnup {
+    background-color: #10133A;
+    color: #DC281E;
+    padding: 16px;
+    font-size: 10pt;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #10133A;
+    min-width: 160px;   
+    z-index: 1;
+    left:-37px;
+}
+
+.dropup-content a {
+    color: #DC281E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+}
+  
+.dropup-content a:hover {
+    background-color: #10133A;
+    color: #FFFFFF;
+}
+  
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropbtn {
+    background-color: #2980B9;
+}

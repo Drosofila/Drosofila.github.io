@@ -1,23 +1,13 @@
-header{
-    background: #10133A;
-}
-
 html{
     background: #10133A;
 }
 
-h1{
-    width: 940px;
-    height:400px;
-    margin-left:auto;
-    margin-right:auto;
-}
 
 .boxheader{
     width: 940px;
-    height:400px;
-    margin-left:auto;
-    margin-right:auto;
+    height: 230px;
+
+    margin: 120px auto auto auto;
 }
 
 .prof{
@@ -70,9 +60,9 @@ h1{
 .bloco{
     width:940px;
     height: 800px;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
+    position:relative;
+    margin: 150px auto auto auto;
+    
 }
 
 

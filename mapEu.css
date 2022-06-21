@@ -1,0 +1,181 @@
+
+html{
+    background-color: #10133A;
+}
+
+header{
+    background-color:#10133A;
+}
+
+body{
+    background-color:#10133A;
+}
+
+/*Footer*/
+footer{
+    background-color: #10133A;
+}
+
+footer a:hover{
+    color: #FFFFFF;
+}
+
+footer ul{
+    width:940px;
+    height:50px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:30px;
+}
+
+footer a{
+    background:#10133A;
+    font-weight: bold;
+    font-family: monospace;
+    color: #DC281E;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+footer li{
+    display: inline;
+    margin: 0 0 0 30px;
+}
+
+.footer1{
+    margin-left: 0;
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    margin: 750px auto 200px auto;
+}
+
+/*Header*/
+
+.Hbox{
+    width: 940px;
+    height: 200px;
+    margin: 50px auto;
+    font-family: monospace;
+    color: #DC281E;
+}
+
+.title{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 35pt;
+    font-family: monospace;
+    color: #DC281E;
+    position: absolute;
+    margin: 20px auto auto 20px;
+}
+
+.sigla{
+    width: 125px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: monospace;
+    color: #FFFFFF;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    margin: 73px auto auto 20px;
+}
+
+.intro{
+    position: absolute;
+    display: inline-block;
+    margin: 31px auto auto 180px;
+    width:auto;
+    max-width: 740px;
+    height:150px;
+    color: #FFFFFF;
+    font-size: 10pt;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.vline {
+    border-left: 4px solid #DC281E;
+    height: 128px;
+    position: absolute;
+    margin: 27px auto auto 162px;
+  }
+
+
+
+
+
+  
+
+/*footer dropup*/
+
+.dropbtnup {
+    background-color: #10133A;
+    color: #DC281E;
+    padding: 16px;
+    font-size: 10pt;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #10133A;
+    min-width: 160px;   
+    z-index: 1;
+    left:-37px;
+}
+
+.dropup-content a {
+    color: #DC281E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+}
+  
+.dropup-content a:hover {
+    background-color: #10133A;
+    color: #FFFFFF;
+}
+  
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropbtn {
+    background-color: #2980B9;
+}
+
+/*Map Section*/
+
+main{
+    width:940px;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#map {
+    width: 940px;
+    height: 650px;
+    position: absolute;
+    margin: 0px auto auto auto;
+    border: 3px solid #DC281E;
+    border-radius: 3px;
+}
+

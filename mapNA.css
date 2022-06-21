@@ -70,7 +70,7 @@ footer{
     font-family: monospace;
     color: #DC281E;
     position: absolute;
-    margin: 20px auto auto 20px;
+    margin: 35px auto auto 50px;
 }
 
 .sigla{
@@ -83,13 +83,13 @@ footer{
     text-align: right;
     display: inline-block;
     position: absolute;
-    margin: 73px auto auto 20px;
+    margin: 88px auto auto 20px;
 }
 
 .intro{
     position: absolute;
     display: inline-block;
-    margin: 40px auto auto 180px;
+    margin: 31px auto auto 180px;
     width:auto;
     max-width: 740px;
     height:150px;

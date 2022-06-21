@@ -8,40 +8,29 @@
     <link rel="stylesheet" href="reset.css" >
     <link rel="stylesheet" href="style.css" >
     <script src="main.js"></script> 
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $('#header').load('https://drosofila.github.io/header');
+        });
+    </script>
 </head>
 
 <body>
     <header>
-        <div class="box">
-            <h1><img src="Drosofila256.png" class="logo"> </h1>
-                <nav>
-                    <ul>
-                        <li> <a href="index.html"> Home</a></li>
-                        <li><a href="augsys.html">Research</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button onclick="myFunction()" class="dropbtn">Maps</button>
-                                <div id="myDropdown" class="dropdown-content">
-                                  <a href="mapEu.html">EGNOS</a>
-                                  <a href="mapNA.html">WAAS</a>
-                                  <a href="mapJA.html">MSAS</a>
-                                </div>
-                            </div> 
-                        </li>
-                        <li><a href="cv.html">Who am I?</a></li>
-                    </ul> 
-                </nav>   
-        </div>
- 
+        <div id="header"></div>
     </header>
 
  
     <main>
-        <div class="box">
             <div class="intro">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum ornare gravida. Nunc commodo orci accumsan nisl imperdiet, vitae interdum nisl cursus. Donec magna urna, iaculis lacinia est a, aliquet consequat lorem. Pellentesque sit amet nulla tincidunt, ultrices lectus suscipit, sodales urna. Phasellus at leo a massa scelerisque semper. Curabitur sit amet eros et turpis venenatis efficitur. Aenean sit amet mauris est. 
             </div>
-        </div>
+
 
 
     </main>

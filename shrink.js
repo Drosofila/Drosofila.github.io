@@ -2,11 +2,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "10pt";
-    document.getElementById("header").style.height = "70px";
+    document.getElementById("header1").style.fontSize = "10pt";
+    document.getElementById("header1").style.height = "70px";
   } else {
-    document.getElementById("header").style.fontSize = "16pt";
-    document.getElementById("header").style.height = "120px";
+    document.getElementById("header1").style.fontSize = "16pt";
+    document.getElementById("header1").style.height = "120px";
   }
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {

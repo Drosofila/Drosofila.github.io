@@ -1,5 +1,18 @@
+.textd{
+    width:940px;
+    height:1500px;
+    display:inline-block;
+    position:relative;
+    margin: 200px auto auto auto;
+}
 
-#header{
+body{
+    background: #10133A;
+}
+
+
+
+#header1{
     font-size:16pt;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     width: 100%;

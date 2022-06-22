@@ -1,8 +1,8 @@
 var Map = L.map('map').setView([58.0, 5.0], 3.4);
 
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 19,
-    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
 }).addTo(Map);
 
 var polygon1 = L.polygon([

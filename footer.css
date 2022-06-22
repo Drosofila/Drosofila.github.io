@@ -45,12 +45,15 @@ footer{
     padding: 20px;
     margin: auto auto 0px auto;
     /* background-image: linear-gradient(#10133A, black); */
-    
+}
+
+#footer{
+    width: 940px;
+    margin: auto auto auto auto;
 }
 
 .foot1{
     margin: 0;
-    
 }
 
 

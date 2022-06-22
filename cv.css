@@ -17,7 +17,7 @@ html{
     margin-right: auto;
     position: relative;
     left: 460px;
-    top:165 px;
+    top: 165px;
     border: 2px solid #DC281E;
     border-radius: 6px;
     display: inline-block;
@@ -61,7 +61,7 @@ html{
     width:940px;
     height: 800px;
     position:relative;
-    margin: 350px auto auto auto;
+    margin: 250px auto auto auto;
     
 }
 

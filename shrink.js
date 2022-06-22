@@ -11,7 +11,7 @@ function scrollFunction() {
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("mosca").style.width = "50px";
-    document.getElementById("mosca").style.margin = "10px 0 0 220px"
+    document.getElementById("mosca").style.margin = "8px 0 0 260px"
   } else {
     document.getElementById("mosca").style.width = "75px";
     document.getElementById("mosca").style.margin = "18px 0 0 30px";
@@ -24,7 +24,7 @@ function scrollFunction() {
   }
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("ul1").style.margin = "10px 200px 0 0"
+    document.getElementById("ul1").style.margin = "10px 270px 0 0"
     document.getElementById("ul1").style.fontSize = "10pt";
   } else {
     document.getElementById("ul1").style.margin = "30px 0 0 30px";

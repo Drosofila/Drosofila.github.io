@@ -7,50 +7,13 @@ header{
     background-color:#10133A;
 }
 
+.ajusteH{
+    margin-top:150px;
+}
+
 body{
     background-color:#10133A;
-}
-
-/*Footer*/
-footer{
-    background-color: #10133A;
-}
-
-footer a:hover{
-    color: #FFFFFF;
-}
-
-footer ul{
-    width:940px;
-    height:50px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:30px;
-}
-
-footer a{
-    background:#10133A;
-    font-weight: bold;
-    font-family: monospace;
-    color: #DC281E;
-    text-decoration: none;
-    font-size: 10pt;
-}
-
-footer li{
-    display: inline;
-    margin: 0 0 0 30px;
-}
-
-.footer1{
-    margin-left: 0;
-}
-
-footer{
-    width:100%;
-    text-align: center;
-    position: relative;
-    top:700px;
+    height:1200px;
 }
 
 /*Header*/
@@ -109,60 +72,6 @@ footer{
   }
 
 
-
-
-
-  
-
-/*footer dropup*/
-
-.dropbtnup {
-    background-color: #10133A;
-    color: #DC281E;
-    padding: 16px;
-    font-size: 10pt;
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-}
-
-.dropup {
-    position: relative;
-    display: inline-block;
-}
-
-.dropup-content {
-    display: none;
-    position: absolute;
-    bottom: 50px;
-    background-color: #10133A;
-    min-width: 160px;   
-    z-index: 1;
-    left:-37px;
-}
-
-.dropup-content a {
-    color: #DC281E;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: monospace;
-}
-  
-.dropup-content a:hover {
-    background-color: #10133A;
-    color: #FFFFFF;
-}
-  
-
-.dropup:hover .dropup-content {
-    display: block;
-}
-
-.dropup:hover .dropbtn {
-    background-color: #2980B9;
-}
-
 /*Map Section*/
 
 main{
@@ -180,5 +89,6 @@ main{
     margin: 0px auto auto auto;
     border: 3px solid #DC281E;
     border-radius: 3px;
+    z-index: 0;
 }
 

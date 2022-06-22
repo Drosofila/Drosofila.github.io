@@ -1,3 +1,15 @@
+.teste{
+    font-size:55pt;
+    color: #FFFFFF;
+    width: 350px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
 
 body{
     background: #10133A;
@@ -45,6 +57,11 @@ nav a{
     font-family: monospace;
     color: #DC281E;
     text-decoration: none;
+}
+
+nav a:hover{
+    color: #FFFFFF;
+    transition: 0.8s;
 }
 
 #ul1{

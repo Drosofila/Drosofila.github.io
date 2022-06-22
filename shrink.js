@@ -25,8 +25,10 @@ function scrollFunction() {
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("ul1").style.margin = "10px 200px 0 0"
+    document.getElementById("header").style.fontSize = "10pt";
   } else {
     document.getElementById("ul1").style.margin = "30px 0 0 30px";
+    document.getElementById("header").style.fontSize = "16pt";
   }
 
 }

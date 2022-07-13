@@ -131,6 +131,6 @@ nav a:hover{
     transition: 0.8s;
 }
 
-.footAlign{
-    margin: 0;
+footer{
+    width: 940px    ;
 }

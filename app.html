@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Oliveira</title>
+    <link rel="stylesheet" href="reset.css" >
+    <link rel="stylesheet" href="app.css" >
+    <script src="main.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $('#header').load('https://drosofila.github.io/header');
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('https://drosofila.github.io/footer');
+        });
+    </script>
+    <script src="shrink.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <main>
+        <div class="box1">
+            <form>
+                <label for="fltlvl">FL:</label>
+                <input type="text" id="fltlvl" name="fltlvl"><br>
+                <label for="DepElev" >Departure Elevation:</label>
+                <input type="text" id="depElev" name="depElev"><br>
+                <label for="arrElev" id="arrElev">Arrival Elevation:</label>
+                <input type="text" id="arrElev" name="arrElev"><br>
+                <label for="ttlDis" id="ttlDis">Total Distance:</label>
+                <input type="text" id="ttlDis" name="ttlDis"><br> 
+                <br> 
+                <input class = "submit" type="submit" value="Submit">
+            </form>
+                <div class="box2">
+                    Insert the required information (numbers only) on the right and press submit to get your calculations.      
+                </div>
+                
+        </div>
+
+        <div class="hbar"></div>
+        <div class = "results">
+
+        </div>
+    </main>
+</body>
+
+<footer>
+    <div id="footer"></div>
+</footer>

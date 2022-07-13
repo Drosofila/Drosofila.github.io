@@ -130,3 +130,7 @@ nav a:hover{
     color: #FFFFFF;
     transition: 0.8s;
 }
+
+.footAlign{
+    margin: 0;
+}

@@ -18,12 +18,14 @@
             $('#header').load('https://drosofila.github.io/header');
         });
     </script>
-    <script>
+        <script>
         $(function(){
             $('#footer').load('https://drosofila.github.io/footer');
         });
     </script>
-    <script src="shrink.js"></script>
+        <script src="shrink.js">
+    </script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -36,24 +38,33 @@
             <form>
                 <label for="fltlvl">FL:</label>
                 <input type="text" id="fltlvl" name="fltlvl"><br>
+
                 <label for="DepElev" >Departure Elevation:</label>
                 <input type="text" id="depElev" name="depElev"><br>
-                <label for="arrElev" id="arrElev">Arrival Elevation:</label>
+
+                <label for="arrElev">Arrival Elevation:</label>
                 <input type="text" id="arrElev" name="arrElev"><br>
-                <label for="ttlDis" id="ttlDis">Total Distance:</label>
+
+                <label for="ttlDis">Total Distance:</label>
                 <input type="text" id="ttlDis" name="ttlDis"><br> 
+                
                 <br> 
-                <input class = "submit" type="submit" value="Submit">
+                <input class = "submit" onclick="getUsrData()"; type="submit" value="SUBMIT">
+                <input class = "submit" onclick="Fpcalc()"; type="submit" value="RESULTS">
             </form>
                 <div class="box2">
                     Insert the required information (numbers only) on the right and press submit to get your calculations.      
                 </div>
-                
         </div>
-
+        <div class="fplan">
+            FLIGHT PLANNING BASED ON THE FOLLOWING PARAMETERS:<br>
+            <br>
+            CLB: 90 KIAS CRZ: 120 KIAS DESC: 145 KIAS
+        </div>
         <div class="hbar"></div>
-        <div class = "results">
 
+        <div class = "results">
+            <script src="app.js">app.js</script>
         </div>
     </main>
 </body>

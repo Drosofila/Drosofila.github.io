@@ -35,7 +35,7 @@ html{
 .hbar {
     border-bottom: 2px solid #DC281E;
     width: 720px;
-    margin: auto auto auto auto;
+    margin: 35px auto auto auto;
   }
 
 /* .text{
@@ -61,15 +61,26 @@ form input{
 
 .submit{
     font-family: monospace;
-    color: #ffffff;
+    color: #DC281E;
     background-color: #10133A;
     text-decoration: none;
     border: none;
     border-radius: 8px;
-    font-size: 14pt;
+    font-size: 15pt;
 }
 
 .submit:hover{
-    background-color: #DC281E;
+    color: #ffffff;
     transition: 0.8s;
+}
+
+.fplan{
+    width: 720px;
+    margin: auto auto auto auto;
+    font-family: monospace;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11pt;
+    text-align: center;
+    text-justify: inter-word;
 }

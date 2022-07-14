@@ -1,12 +1,14 @@
 
-function getUsrData(){
-    var getFltLvl = document.getElementById("fltlvl").value;
-    var getDepElev = document.getElementById("depElev").value;
-    var getArrElev = document.getElementById("arrElev").value;
-    var getTtlDist = document.getElementById("ttlDis").value;
-    var userData = [getFltLvl, getArrElev, getDepElev, getTtlDist];
-    return(userData);
-}
+// function getUsrData(){
+//     var getFltLvl = 55;
+//     var getDepElev = 45;
+//     var getArrElev = 0;
+//     var getTtlDist = 300;
+//     var userData = [getFltLvl, getDepElev, getArrElev, getTtlDist];
+//     return(userData);
+// } 
+
+// console.log(getUsrData());
 
 // console.log(getUsrData());
 
@@ -24,17 +26,9 @@ function getUsrData(){
 // }
 
 function usrWaypointCalc(){
-    var wp1 = document.getElementById("wp1").value;
-    var wp2 = document.getElementById("wp2").value;
-    var wp3 = document.getElementById("wp3").value;
-    var wp4 = document.getElementById("wp4").value;
-    var wp5 = document.getElementById("wp5").value;
-    var wp6 = document.getElementById("wp6").value;
-    var wp7 = document.getElementById("wp7").value;
-    var wp8 = document.getElementById("wp8").value;
-    wpArray = [wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8];
-
-    var usrDist = [wpArray];
+    waypoints=getUsrWaypoints();
+    var usrDist = [];
+    usrDist.push(waypoints);
     var usrTime = [];
 
     for (i=0; i<usrDist.length; i++){
@@ -50,41 +44,41 @@ function usrWaypointCalc(){
 }
 
 //---------------------------------------------------------------------------------
-    var Vi = [];
-    Vi.push(90, 120, 145);
+//var browserData = getUsrData();
 
-    var clbVi = Vi[0];
-    var crzVi = Vi[1];
-    var desVi = Vi[2];
-    var browserData = getUsrData();
+var Vi = [];
+Vi.push(90, 120, 145);
 
-    
+var clbVi = Vi[0];
+var crzVi = Vi[1];
+var desVi = Vi[2];
 
-    var clbVa
-    var crzVa
-    var desVa
 
-    var tocDist
-    var crzDist
-    var desDist
+var clbVa
+var crzVa
+var desVa
 
-    var tocTime
-    var crzTime
-    var desTime
+var tocDist
+var crzDist
+var desDist
 
-    var mca
-    var mda
+var tocTime
+var crzTime
+var desTime
+
+var mca
+var mda
 
 
    
 
 
 function Fpcalc(){
-    var getFltLvl = document.getElementById("fltlvl").value;
-    var getDepElev = document.getElementById("depElev").value;
-    var getArrElev = document.getElementById("arrElev").value;
-    var getTtlDist = document.getElementById("ttlDis").value;
-    var userData = [getFltLvl, getArrElev, getDepElev, getTtlDist];
+    var getFltLvl = 55;
+    var getDepElev = 45;
+    var getArrElev = 0;
+    var getTtlDist = 300;
+    var userData = [getFltLvl, getDepElev, getArrElev, getTtlDist];
 
     var fltLvl = userData[0];
     var depElev = userData[1];
@@ -95,18 +89,20 @@ function Fpcalc(){
 
     mda = (((fltLvl*100 - arrElev)/2)+arrElev)/100;
 
-    clbVa = ((((mca/10)*0.02)+100)/100)*Vi[0];
+    clbVa = (((mca/10)*0.02)+1)*Vi[0];
     tocDist = ((fltLvl*100)-depElev)/600;
     tocTime =  (clbVa/60)*tocDist;
 
-    desVa = ((((mda/10)*0.02)+100)/100)*Vi[2];
+    desVa = (((mda/10)*0.02)+1)*Vi[2];
     desTime = ((fltLvl*100)-arrElev)/600;
     desDist= (desVa/60)*desTime;
 
-    crzVa = (((fltLvl*0.02)+100)/100)*Vi[1];
+    crzVa = ((fltLvl*0.02)+1)*Vi[1];
     crzDist = ttlDist - (tocDist+desDist);
     crzTime = (60*crzDist)/crzVa;
 }
+
+console.log(Fpcalc());
 
 function clbTb(){
     var clbTable = {Phase:'Climb', 'IAS(kt)': clbVi.toFixed(2),'TAS(kt)': clbVa.toFixed(2), 'Distance(NM)': tocDist.toFixed(2), 'Time(min)': tocTime.toFixed(2)}
@@ -128,18 +124,12 @@ function crzTb(){
 
 function printTables(){
     console.table([clbTb()]);
-    console.table([crzTb()]);
     console.table([desTb()]);
-    
+    console.table([crzTb()]);
 
     //console.table(usrWaypointCalc());
 }
-
-function printUsrWpTb(){
-    console.table(usrWaypointCalc());
-}
-
-    // console.table([clbTb()]);
+    console.table([clbTb()]);
     // console.table([desTb()]);
     // console.table([crzTb()]);   
 

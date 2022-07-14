@@ -11,7 +11,7 @@ html{
     font-family: monospace;
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 15pt;
 }
 
 .box2{
@@ -83,4 +83,16 @@ form input{
     font-size: 11pt;
     text-align: center;
     text-justify: inter-word;
+}
+
+.wp{
+    
+    width: 720px;
+    height: 200px;
+    margin: 450px auto auto auto;
+    text-align: left;
+    font-family: monospace;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15pt;
 }

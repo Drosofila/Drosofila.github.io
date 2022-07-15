@@ -1,28 +1,3 @@
-
-function getUsrData(){
-    var getFltLvl = document.getElementById("fltlvl").value;
-    var getDepElev = document.getElementById("depElev").value;
-    var getArrElev = document.getElementById("arrElev").value;
-    var getTtlDist = document.getElementById("ttlDis").value;
-    var userData = [getFltLvl, getArrElev, getDepElev, getTtlDist];
-    return(userData);
-}
-
-// console.log(getUsrData());
-
-// function getUsrWaypoints(){
-//     var wp1 = document.getElementById("wp1").value;
-//     var wp2 = document.getElementById("wp2").value;
-//     var wp3 = document.getElementById("wp3").value;
-//     var wp4 = document.getElementById("wp4").value;
-//     var wp5 = document.getElementById("wp5").value;
-//     var wp6 = document.getElementById("wp6").value;
-//     var wp7 = document.getElementById("wp7").value;
-//     var wp8 = document.getElementById("wp8").value;
-//     wpArray = [wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8];
-//     return(wpArray);
-// }
-
 function usrWaypointCalc(){
     var wp1 = document.getElementById("wp1").value;
     var wp2 = document.getElementById("wp2").value;
@@ -32,33 +7,45 @@ function usrWaypointCalc(){
     var wp6 = document.getElementById("wp6").value;
     var wp7 = document.getElementById("wp7").value;
     var wp8 = document.getElementById("wp8").value;
-    wpArray = [wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8];
+    var wpArray = [wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8];
 
-    var usrDist = [wpArray];
+    var usrDist = wpArray;
     var usrTime = [];
 
     for (i=0; i<usrDist.length; i++){
         usrTime[i] = (60*usrDist[i])/crzVa;
-        // console.log(usrTime[i].toFixed(2)," min");
     }
 
-    var usrTableInfo=[];
-    for (i=0;i<usrDist.length;i++){
+
+    function usrTb(){
+        var usrTableInfo=[];
+        for (i=0;i<usrDist.length;i++){
         usrTableInfo[i] = {Phase: 'User Leg '  + (i+1), 'Distance(NM)': usrDist[i], 'Time(min)': usrTime[i].toFixed(2)} 
+        }
+        return(usrTableInfo);
     }
-    return(usrTableInfo);
+    
+
+    function displayUsrTable(){
+        console.table([usrTb()]);
+    }
+    
+    return(displayUsrTable());
 }
 
-//---------------------------------------------------------------------------------
+//--------------------------------------------------------------------------
+
+
+   
+
+
+function Fpcalc(){
     var Vi = [];
     Vi.push(90, 120, 145);
 
     var clbVi = Vi[0];
     var crzVi = Vi[1];
     var desVi = Vi[2];
-    var browserData = getUsrData();
-
-    
 
     var clbVa
     var crzVa
@@ -75,11 +62,6 @@ function usrWaypointCalc(){
     var mca
     var mda
 
-
-   
-
-
-function Fpcalc(){
     var getFltLvl = document.getElementById("fltlvl").value;
     var getDepElev = document.getElementById("depElev").value;
     var getArrElev = document.getElementById("arrElev").value;
@@ -106,42 +88,32 @@ function Fpcalc(){
     crzVa = (((fltLvl*0.02)+100)/100)*Vi[1];
     crzDist = ttlDist - (tocDist+desDist);
     crzTime = (60*crzDist)/crzVa;
-}
-
-function clbTb(){
-    var clbTable = {Phase:'Climb', 'IAS(kt)': clbVi.toFixed(2),'TAS(kt)': clbVa.toFixed(2), 'Distance(NM)': tocDist.toFixed(2), 'Time(min)': tocTime.toFixed(2)}
-    return(clbTable);
-}
-
-function desTb(){
-    var desTable = {Phase:'Descent','IAS(kt)': desVi.toFixed(2), 'TAS(kt)': desVa.toFixed(2), 'Distance(NM)': desDist.toFixed(2), 'Time(min)': desTime.toFixed(2)}
-    return(desTable);
-}
-
-function crzTb(){
-    var crzTable = {Phase:'Cruise', 'IAS(kt)': crzVi.toFixed(2), 'TAS(kt)': crzVa.toFixed(2), 'Distance(NM)': crzDist.toFixed(2), 'Time(min)': crzTime.toFixed(2)} 
-    return(crzTable);
-}
-
-
-
-
-function printTables(){
-    console.table([clbTb()]);
-    console.table([crzTb()]);
-    console.table([desTb()]);
     
+    function clbTb(){
+        var clbTable = {Phase:'Climb', 'IAS(kt)': clbVi.toFixed(2),'TAS(kt)': clbVa.toFixed(2), 'Distance(NM)': tocDist.toFixed(2), 'Time(min)': tocTime.toFixed(2)}
+        return(clbTable);
+    }
 
-    //console.table(usrWaypointCalc());
+    function desTb(){
+        var desTable = {Phase:'Descent','IAS(kt)': desVi.toFixed(2), 'TAS(kt)': desVa.toFixed(2), 'Distance(NM)': desDist.toFixed(2), 'Time(min)': desTime.toFixed(2)}
+        return(desTable);
+    }
+
+    function crzTb(){
+        var crzTable = {Phase:'Cruise', 'IAS(kt)': crzVi.toFixed(2), 'TAS(kt)': crzVa.toFixed(2), 'Distance(NM)': crzDist.toFixed(2), 'Time(min)': crzTime.toFixed(2)} 
+        return(crzTable);
+    }
+
+    function printTables(){
+        console.table([clbTb()]);
+        console.table([desTb()]);
+        console.table([crzTb()]);
+    }
+    document.getElementById("TAS").innerHTML = crzVa;
+    return(printTables());
 }
 
-function printUsrWpTb(){
-    console.table(usrWaypointCalc());
-}
 
-    // console.table([clbTb()]);
-    // console.table([desTb()]);
-    // console.table([crzTb()]);   
 
 
 

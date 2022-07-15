@@ -49,7 +49,7 @@
                 <input type="text" id="ttlDis" name="ttlDis"><br> 
                 
                 <br> 
-                <input class = "submit" onclick="getUsrData(); Fpcalc(); clbTb(); desTb(); crzTb(); printTables();"; type="submit" value="SUBMIT">
+                <input class = "submit" onclick="Fpcalc();"; type="submit" value="SUBMIT">
                 <!-- <input class = "submit" onclick="Fpcalc(); clbTb(); desTb(); crzTb();PrintTables()"; type="submit" value="RESULTS"> -->
                 <!-- <input class = "submit" onclick="printTables();"; type="submit" value="PRINT TABLES"> -->
             </form>
@@ -63,6 +63,8 @@
             CLB: 90 KIAS CRZ: 120 KIAS DESC: 145 KIAS
         </div>
         <div class="hbar"></div>
+
+        <p id="TAS"></p>
 
         <form class="wp">
             <label for="wp1">Leg 1 dist (NM):</label>
@@ -90,7 +92,7 @@
             <input type="text" id="wp8" name="wp8"><br>
 
             <br> 
-            <input class = "submit" onclick="usrWaypointCalc(); printUsrWpTb(); "; type="submit" value="SUBMIT">
+            <input class = "submit" onclick="usrWaypointCalc();"; type="submit" value="SUBMIT">
         </form>
 
 

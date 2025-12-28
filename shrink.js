@@ -11,7 +11,7 @@ function scrollFunction() {
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("mosca").style.width = "50px";
-    document.getElementById("mosca").style.margin = "8px 0 0 260px"
+    document.getElementById("mosca").style.margin = "8px 0 0 210px"
   } else {
     document.getElementById("mosca").style.width = "75px";
     document.getElementById("mosca").style.margin = "18px 0 0 30px";

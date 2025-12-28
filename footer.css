@@ -61,7 +61,7 @@ footer{
 /*footer dropup*/
 
 .dropbtnup {
-    background-color: #10133A;
+    background-color: #FAF9F6;
     color: #DC281E;
     padding: 16px;
     font-size: 10pt;
@@ -79,7 +79,7 @@ footer{
     display: none;
     position: absolute;
     bottom: 50px;
-    background-color: #10133A;
+    background-color: #FAF9F6;
     min-width: 160px;   
     z-index: 1;
     left:-37px;

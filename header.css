@@ -9,7 +9,7 @@
  */
 
 body{
-    background: #10133A;
+    background: #FAF9F6;
 }
 
 
@@ -23,7 +23,7 @@ body{
     top: 0;
     z-index: 1;
     transition: 0.8s;
-    background: #10133A;
+    background: #FAF9F6;
 }
 
 .box{
@@ -82,7 +82,7 @@ nav a:hover{
   }
 
 .dropbtn {
-    background-color: #10133A;
+    background-color: #FAF9F6;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: bold;

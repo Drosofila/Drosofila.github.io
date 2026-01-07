@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage[margin=0cm, top=0cm]{geometry} % Top margin increased by 3cm
+\usepackage{tikz}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{lipsum} % For generating dummy text
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\setlength\parindent{0pt}
+\begin{document}
+%============================================================
+% 1° Página do meu template
+% Definição das linhas divisórias do meu template
+%============================================================
+
+\begin{tikzpicture}[remember picture, overlay]
+    % Line closer to the upper margin
+    \draw ([yshift=-2.5cm]current page.north west) -- ([yshift=-2.5cm]current page.north east);
+
+    % Node for the first section
+    \node[anchor=south west, inner sep=0, xshift=1cm, yshift=-2.5cm] (section1) {};
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture, overlay]
+    % Line closer to the upper margin
+    \draw ([yshift=-4.7cm]current page.north west) -- ([yshift=-4.7cm]current page.north east);
+
+    % Node for the second section
+    \node[anchor=south west, inner sep=0, xshift=1cm, yshift=-4.7cm] (section2) {};
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture,overlay]
+  % Vertical line
+  \draw ([yshift=-4.7cm,xshift=5cm]current page.north west) -- ([yshift=-\paperheight,xshift=5cm]current page.north west);
+
+  % Node for the third section
+  \node[anchor=south west, inner sep=0, xshift=6cm, yshift=-4.7cm] (section3) {};
+\end{tikzpicture}
+
+%-------------------------------------------------------------
+
+% INFORMAÇÕES DA MATÉRIA
+\begin{textblock*}{20 cm}(0.5cm,1cm) % {block width} (coords)
+    \textbf{MD-80 Systems}
+    \\
+    \textbf{Bibliografia:} SAS AOM, Delta AOM, LSH AOM.
+\end{textblock*}
+
+% CÓDIGO DO RESUMO
+\begin{textblock*}{3 cm}(17cm,1cm) % {block width} (coords)
+    \textbf{MD80}
+\end{textblock*}
+
+% CÁPITULO DO LIVRO
+\begin{textblock*}{3 cm}(17cm,1.5cm) % {block width} (coords)
+    \textbf{}
+\end{textblock*}
+
+%TÓPICOS CHAVES
+\begin{textblock*}{20cm}(0.5cm,3.5cm) % {block width} (coords)
+   \textit{Tópicos}
+\end{textblock*}
+
+% ESQUERDA
+\begin{textblock*}{4cm}(0.5cm,5.5cm) % {block width} (coords)
+   How many autpilots does the MD-80 have?
+   \\
+   \\
+   What are the autoland capabilities of the MD-80
+\end{textblock*}
+
+% DIREITA
+\begin{textblock*}{16cm}(05.25cm,5.5cm) % {block width} (coords)
+   $\bigcdot$ The aircraft has 2 independent autopilot systems.
+\\
+\\
+\\
+   $\bigcdot$ Fail passive autoland.
+\end{textblock*}
+
+
+\newpage
+
+%============================================================
+% 2° Página do meu template
+% Definição das linhas divisórias do meu template
+%============================================================
+
+\begin{tikzpicture}[remember picture,overlay]
+ % Vertical line
+   \draw ([yshift=0cm,xshift=5cm]current page.north west) -- ([yshift=-\paperheight,xshift=5cm]current page.north west);
+
+  % Node for the third section
+   \node[anchor=south west, inner sep=0, xshift=6cm, yshift=-4.7cm] (section3) {};
+\end{tikzpicture}
+
+%-------------------------------------------------------------
+
+
+% ESQUERDA
+\begin{textblock*}{4cm}(0.5cm,1cm) % {block width} (coords)
+   Lorem Ipsum?
+\end{textblock*}
+
+% DIREITA
+\begin{textblock*}{16cm}(05.25cm,1cm) % {block width} (coords)
+   $\bigcdot$ Lorem Ipsum
+
+
+
+
+
+\end{textblock*}
+
+
+
+
+\end{document}

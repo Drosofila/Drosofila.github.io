@@ -1,152 +1,96 @@
-\documentclass{article}
-\usepackage[margin=0cm, top=0cm]{geometry} % Top margin increased by 3cm
-\usepackage{tikz}
-\usepackage[absolute,overlay]{textpos}
-\usepackage{lipsum} % For generating dummy text
-\usepackage{setspace}
-\renewcommand{\baselinestretch}{1.1}
-\usepackage{graphicx}
-\usepackage{amsmath}
+\documentclass[a4paper]{article}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
 
+\title{
+\vspace{-3em}
+\begin{tcolorbox}
+    \begin{center}
+      \LARGE\sffamily
+      Cornell Notes on Something
+    \end{center}
+  \end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{red}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+\usepackage{lipsum}% just to generate filler text for the example
+\usepackage[margin=2cm]{geometry}
+\usepackage{lipsum}% just to generate dummy text for the example
+
+
+%\url{http://tex.stackexchange.com/a/314/86}
 
 \makeatletter
-\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
-\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\def\cornell{\@ifnextchar[{\@with}{\@without}}
+\def\@with[#1]#2#3{
+\begin{tcolorbox}[enhanced,colback=gray,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
+opacityframe=0,opacityback=.3,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=#1
+]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,
+width=\textwidth,nobeforeafter]#2\end{tcolorbox}%
+\tcblower
+\sffamily
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
+#3
+\end{tcolorbox}
+\end{tcolorbox}
+}
+\def\@without#1#2{
+\begin{tcolorbox}[enhanced,colback=white!15,colframe=white,fonttitle=\bfseries,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
+opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt}
+]
+
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,
+width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
+\tcblower
+\sffamily
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
+#2
+\end{tcolorbox}
+\end{tcolorbox}
+}
 \makeatother
 
-\setlength\parindent{0pt}
+\parindent=0pt
+
+%\newcommand{\cornell}[2]{%
+%}
+
+%\AddEverypageHook{
+%\hspace{.3\textwidth}\vrule width 3pt depth .4\textheight
+%\vspace{-\textheight}}
+
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+
 \begin{document}
-%============================================================
-% 1° Página do meu template
-% Definição das linhas divisórias do meu template
-%============================================================
+\maketitle
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
 
-\begin{tikzpicture}[remember picture, overlay]
-    % Line closer to the upper margin
-    \draw ([yshift=-2.5cm]current page.north west) -- ([yshift=-2.5cm]current page.north east);
+\cornell{Around what time did the concept and early ETOPS rules start to be used?}{Around 1986, with more dual engine airplanes equipped with more reliable engines (B767) being used in remote routes away from suitable alternates, where 3 and 4 engined airplanes were used without any restriction to maximum alternate distance.}
 
-    % Node for the first section
-    \node[anchor=south west, inner sep=0, xshift=1cm, yshift=-2.5cm] (section1) {};
-\end{tikzpicture}
+\cornell{Is the term ETOPS correct? What does it stand for?}{The term ETOPS is correct. It initially stood for Extended Range Twin-Engine Operations and was widely used in the early decades. Since 2012, Annex 6 introduced the new concept of Extended Diversion Time Operations - EDTO, since having two engines was not the only parameter used for determining alternate distance limits. EDTO was not widely adopted by any regulating agencies or operators and Annex 6 itself explicitly expresses that the usage of ETOPS is acceptable. FAA has opted to reutilize the acronym to ExTended range OPerationS, and EASA uses ETOPS for the classic 2-engine case and LROPS (Long Range Operations) for 3 and 4 engines.}
 
-\begin{tikzpicture}[remember picture, overlay]
-    % Line closer to the upper margin
-    \draw ([yshift=-4.7cm]current page.north west) -- ([yshift=-4.7cm]current page.north east);
+\cornell{Where is the ETOPS / EDTO information and guidance?}{ICAO Annex 6, Airplane Operation, Chapter 4, and Attachment C.}
 
-    % Node for the second section
-    \node[anchor=south west, inner sep=0, xshift=1cm, yshift=-4.7cm] (section2) {};
-\end{tikzpicture}
+\cornell{Another research question very long for one line.}{\lipsum*[1]}
 
-\begin{tikzpicture}[remember picture,overlay]
-  % Vertical line
-  \draw ([yshift=-4.7cm,xshift=5cm]current page.north west) -- ([yshift=-\paperheight,xshift=5cm]current page.north west);
+\cornell{Do you want fill much more than a page}{No problem. \lipsum*[3]}
 
-  % Node for the third section
-  \node[anchor=south west, inner sep=0, xshift=6cm, yshift=-4.7cm] (section3) {};
-\end{tikzpicture}
+\cornell{More?}{No problem. \lipsum*[3-4]}
 
-%-------------------------------------------------------------
-
-% INFORMAÇÕES DA MATÉRIA
-\begin{textblock*}{20 cm}(0.5cm,1cm) % {block width} (coords)
-    \textbf{Nome da Matéria}
-    \\
-    \textbf{Bibliografia:} Bla bla bla
-\end{textblock*}
-
-% CÓDIGO DO RESUMO
-\begin{textblock*}{3 cm}(17cm,1cm) % {block width} (coords)
-    \textbf{COD}
-\end{textblock*}
-
-% CÁPITULO DO LIVRO
-\begin{textblock*}{3 cm}(17cm,1.5cm) % {block width} (coords)
-    \textbf{Capítulo}
-\end{textblock*}
-
-%TÓPICOS CHAVES
-\begin{textblock*}{20cm}(0.5cm,3.5cm) % {block width} (coords)
-   \textit{Tópicos}
-\end{textblock*}
-
-% ============================================================
-% ============================================================
-% RESUMO
-% ============================================================
-% ============================================================
-
-% ESQUERDA
-\begin{textblock*}{4cm}(0.5cm,5.5cm) % {block width} (coords)
-  \textbf{Skybrary General Reading}
-  \\
-  \\
-  \\
-  Around what time did the concept and early ETOPS rules start to be used?
-  \\
-  \\
-  Is the term ETOPS correct? What does it stand for?
-  \\
-  \\
-  \\
-  \\
-  \\
-  \\
-  Where is the ETOPS / \\ EDTO information and guidance?
-  \\
-  \\
-\end{textblock*}
-
-% DIREITA
-\begin{textblock*}{16cm}(05.25cm,5.5cm) % {block width} (coords)
-  %\hfill \break
-  test
-  \\
-  \\
-  \\
-  \\
-  $\bigcdot$ Around 1986, with more dual engine airplanes equipped with more reliable engines (B767) being used in remote routes away from suitable alternates, where 3 and 4 engined airplanes were used without any restriction to maximum alternate distance.
-  \\
-  \\
-  $\bigcdot$ The term ETOPS is correct. It initially stood for Extended Range Twin-Engine Operations and was widely used in the early decades. Since 2012, Annex 6 introduced the new concept of Extended Diversion Time Operations - EDTO, since having two engines was not the only parameter used for determining alternate distance limits. EDTO was not widely adopted by any regulating agencies or operators and Annex 6 itself explicitly expresses that the usage of ETOPS is acceptable. FAA has opted to reutilize the acronym to ExTended range OPerationS, and EASA uses ETOPS for the classic 2-engine case and LROPS (Long Range Operations) for 3 and 4 engines.
-  \\
-  \\
-  $\bigcdot$ ICAO Annex 6, Airplane Operation, Chapter 4, and Attachment C.
-\end{textblock*}
-
-
-\newpage
-
-%============================================================
-% 2° Página do meu template
-% Definição das linhas divisórias do meu template
-%============================================================
-
-\begin{tikzpicture}[remember picture,overlay]
- % Vertical line
-   \draw ([yshift=0cm,xshift=5cm]current page.north west) -- ([yshift=-\paperheight,xshift=5cm]current page.north west);
-
-  % Node for the third section
-   \node[anchor=south west, inner sep=0, xshift=6cm, yshift=-4.7cm] (section3) {};
-\end{tikzpicture}
-
-%-------------------------------------------------------------
-
-
-% ESQUERDA
-\begin{textblock*}{4cm}(0.5cm,1cm) % {block width} (coords)
-  Pergunta
-  \\
-  \\
-  Pergunta
-\end{textblock*}
-
-% DIREITA
-\begin{textblock*}{16cm}(05.25cm,1cm) % {block width} (coords)
-  $\bigcdot$ Resposta
-  \\
-  \\
-  $\bigcdot$ Resposta
-\end{textblock*}
+\cornell[Last question]{This is the end?}{Yes.}
 
 
 

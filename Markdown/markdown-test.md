@@ -12,7 +12,8 @@
                                                     lorem ipsum bla bla bla bla
                                                     bliu bliu blou blue.
 
-
+| Question | Answer |
+|----------|--------|
 | * Question inside a table | Answer on the other column |  
-| * Another question        | Another answer             |
+| * Another question | Another answer |
 

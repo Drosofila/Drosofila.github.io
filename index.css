@@ -1,0 +1,70 @@
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 16px;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .header-image {
+      display: block;
+      margin: 0 auto 24px auto;
+      max-width: 120px;
+      height: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .category ul {
+      margin-top: 12px;
+      padding-left: 20px;
+    }
+
+    li {
+      background: white;
+      text-align: center;
+      margin: 8px 0;
+      padding: 10px 14px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    a {
+      text-decoration: none;
+      color: #666666;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1 small {
+      display: block;        /* puts it on a new line */
+      font-size: 0.5em;      /* smaller than default */
+      font-weight: normal;
+      color: #666;
+      margin-top: 6px;
+    }
+
+    .pdf-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1767838860.67744 "test.tex" "test.pdf" "test" 1767838861.36292 0
+["pdflatex"] 1767872157.35907 "test.tex" "test.pdf" "test" 1767872158.27549 0
   "/etc/texmf/web2c/texmf.cnf" 1767793528.09724 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -122,8 +122,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1767795032.54399 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1767795071 6800796 499fafc12e8354b82d0b4109b367a898 ""
-  "test.aux" 1767838861.31149 76 54de7db945f39367c9cf89ce9984469b "pdflatex"
-  "test.tex" 1767838859.32007 3155 317776a28d82d1658406f0efba7fa928 ""
+  "test.aux" 1767872158.20239 76 54de7db945f39367c9cf89ce9984469b "pdflatex"
+  "test.tex" 1767872153.6784 3229 4947ab563496d3f804c10ececa43fbcd ""
   (generated)
   "test.aux"
   "test.log"

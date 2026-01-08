@@ -4,10 +4,35 @@
 
 % This is the title of the subject and the bibliography
 
+\tcbset{
+  colback=white,
+  colframe=black,
+  sharp corners,
+  boxrule=0.8pt
+}
+
+\tcbset{
+  cornell/.style={
+    colback=white,
+    colframe=black,
+    sharp corners,
+    boxrule=0.8pt
+  }
+
+
+}\tcbset{
+  cornell/.style={
+    colback=white,
+    colframe=black,
+    sharp corners,
+    boxrule=0.8pt
+  }
+}
+
 \newcommand{\cornellbreak}[1]{%
   \begin{tcolorbox}[
-    colback=gray!10,
-    colframe=black!40,
+  %  colframe=black!40,
+    % colback=gray!10,
     boxrule=0.8pt,
     width=0.95\textwidth,
     center,
@@ -54,13 +79,13 @@ Bibliography: Lorem, Ipsum
 
 \begin{tcolorbox}[
   enhanced,
-  colback=gray,
-  colframe=black,
-  fonttitle=\large\bfseries\sffamily,
+%  colback=gray,
+%  colframe=black,
+  fonttitle=\large\sffamily,
   sidebyside=true,
   nobeforeafter,
   before=\vfil,after=\vfil,
-  colupper=blue,
+%  colupper=blue,
   sidebyside align=top,
   lefthand width=.3\textwidth,
   before skip=2pt, after skip=2pt,
@@ -70,19 +95,19 @@ Bibliography: Lorem, Ipsum
   ]
 
 \begin{tcolorbox}[
-  colback=blue!05,
-  colframe=blue!25,
+%  colback=blue!05,
+%  colframe=blue!25,
   sidebyside align=top,
   width=\textwidth,
   nobeforeafter
   ]#2
-\end{tcobluelorbox}%
+\end{tcolorbox}%
 \tcblower
 \sffamily
 
 \begin{tcolorbox}[
-  colback=blue!05,
-  colframe=blue!10,
+%  colback=blue!05,
+%  colframe=blue!10,
   width=\textwidth,
   nobeforeafter
   ]#3
@@ -91,21 +116,47 @@ Bibliography: Lorem, Ipsum
 \end{tcolorbox}
 }
 \def\@without#1#2{
-\begin{tcolorbox}[enhanced,colback=white!15,colframe=white,fonttitle=\bfseries,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
-before skip=2pt, after skip=2pt,
-opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,
-segmentation style={black!55,solid,opacity=0,line width=3pt}
+\begin{tcolorbox}[
+  enhanced,
+%  colback=white!15,
+%  colframe=white,
+  fonttitle=\sffamily,
+  sidebyside=true,
+  nobeforeafter,
+  before=\vfil,
+  after=\vfil,
+%  colupper=blue,
+  sidebyside align=top,
+  lefthand width=.3\textwidth,
+  before skip=2pt, after skip=2pt,
+  opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,
+  segmentation style={black!55,solid,opacity=0,line width=3pt}
 ]
 
-\begin{tcolorbox}[colback=blue!05,colframe=blue!25,sidebyside align=top,
-width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
+\begin{tcolorbox}[
+%  colback=blue!05,
+%  colframe=blue!25,
+  sidebyside align=top,
+  width=\textwidth,
+  nobeforeafter
+  ]#1
+\end{tcolorbox}%
+
 \tcblower
 \sffamily
-\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
-#2
+
+\begin{tcolorbox}[
+%  colback=blue!05,
+%  colframe=blue!10,
+  width=\textwidth,
+  nobeforeafter
+  ]#2
 \end{tcolorbox}
+
 \end{tcolorbox}
+
 }
+
 \makeatother
 
 \parindent=0pt
@@ -126,7 +177,7 @@ width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
 
 \cornellbreak{\textbf{First Subject}}
 
-\cornell{Example Question}
+\cornell{Exampsdasdle Question}
         {Example Answer}
 
 \cornell{Example Question}

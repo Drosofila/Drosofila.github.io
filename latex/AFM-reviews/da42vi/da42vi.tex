@@ -1,5 +1,6 @@
 \documentclass[a4paper]{article}
 \usepackage{tcolorbox}
+\usepackage{parskip}
 \tcbuselibrary{skins}
 
 % This is the title of the subject and the bibliography
@@ -24,9 +25,9 @@
 \begin{tcolorbox}
 \begin{center}
 \Large\sffamily
-\textbf{MD-80 Systems}\\
+\textbf{Diamond DA-42 VI Notes}\\
 \normalsize\sffamily
-Bibliography: SAS AOM, Delta AOM, LSH AOM.
+Bibliography: DA-42 VI AFM.
 \end{center}
 \end{tcolorbox}
 \vspace{-3em}
@@ -96,36 +97,61 @@ width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
 \providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
 
 \begin{document}
+
+\sffamily %Hopefully this makes the font consistent thoughout the whole thing
 \maketitle
 \SetBgContents{\rule[0em]{4pt}{\textheight}}
 
 
-\cornellbreak{\textbf{}}
+\cornellbreak{\textbf{Airspeeds for Normal Operation}}
 
-\cornell{Example Question}
-        {Example Answer}
+\cornell
+{Take-Off airpeeds}
+{V1/VR = 76 KIAS\\
+Vx = 77 KIAS (Flaps APP)\\
+Vy = 92 KIAS}
 
-\cornell{Example Question}
-        {Example Answer}
+\cornell
+{Climb airspeeds}
+{Vy = 92 KIAS\\Vyse = 85 KIAS\\Vyse (Icing Conditions) = 90 KIAS\\Normal Cruise Climb = 100 KIAS}
 
-\cornell{Example Question}
-        {Example Answer}
 
-\cornellbreak{\textbf{New Subject}}
+\cornell
+{Descent Airspeeds}
+{Use 149 KIAS for descent planning.}
 
-\cornell{Example Question}
-        {Example Answer}
+\cornell
+{Approach Airspeeds\\ (Normal Conditions)}
+{Vref:\vspace{0.5em}\\Flaps UP = 92 KIAS\\Flaps APP = 88 KIAS\\Flaps LDG = 86 KIAS}
 
-\cornell{Example Question}
-        {Example Answer}
+\cornell
+{Approach Airspeeds\\ (Icing Conditions)}
+{Vref:\vspace{0.5em}\\Flaps UP = 97 KIAS\\Flaps APP = 93 KIAS\\Flaps LDG = NOT ALLOWED}
 
-\cornell{Example Question}
-        {Example Answer}
+\cornellbreak{\textbf{Maneuvers}}
 
-\cornell{Example Question}
-        {Example Answer}
+\cornell
+{Take-Off}
+{\textbf{Pitch after rotation:} 10 - 12 degrees to maintain Vy.\vspace{0.5em}\\After 500 ft: Flaps UP \textrightarrow\ Climb Power \textrightarrow\ Pitch 8 - 10 degrees.}
 
-\cornell{Example Question}
-        {Example Answer}
+\cornell
+{Traffic Pattern}
+{Pitch and Power:\vspace{0.5em}\\100 KIAS Level Flight, Clean \textrightarrow\ 2 - 3 dnu, 30\% Load. \vspace{0.5em}\\100 KIAS, Descent \textrightarrow\ 1 dnu, 27\%. }
+
+\cornell
+{Speed and Flaps Schedule\\Visual Traffic Pattern}
+{Downwind: 100 KIAS - Flaps UP\vspace{0.5em}\\Base: 95 KIAS - Flaps APP - Gear Down\vspace{0.5em}\\Final Vref - Flaps A/R}
+
+
+\cornell
+{IFR - Precision and No-Precision Approaches}
+{Fly the approach with:\vspace{0.5em}\\Gear UP\vspace{0.5em}\\Flaps UP\vspace{0.5em}\\100 KIAS\vspace{0.5em}\\From IAF to FAF or GS intercept, then configure tha aircraft for landing as required.}
+
+\cornellbreak{\textbf{Systems}}
+
+\cornell
+{Example Question}
+{Example Answer}
 
 \end{document}
+

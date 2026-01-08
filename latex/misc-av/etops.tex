@@ -2,14 +2,33 @@
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
 
+% This is the title of the subject and the bibliography
+
+\newcommand{\cornellbreak}[1]{%
+  \begin{tcolorbox}[
+    colback=gray!10,
+    colframe=black!40,
+    boxrule=0.8pt,
+    width=0.95\textwidth,
+    center,
+    before skip=8pt,
+    after skip=8pt,
+  ]
+  \centering\normalsize\sffamily #1
+  \end{tcolorbox}
+}
+
+
 \title{
 \vspace{-3em}
 \begin{tcolorbox}
-    \begin{center}
-      \LARGE\sffamily
-      Cornell Notes on Something
-    \end{center}
-  \end{tcolorbox}
+\begin{center}
+\Large\sffamily
+\textbf{ETOPS and EDTO}\\
+\normalsize\sffamily
+Bibliography: Skybrary Extended Range Operations, CAE Oxford Book 6 - Ch. 17, CAE Oxford Book 7 - Ch. 8, Draft of th ICAO EDTO Manual, FAA AC 120-42B, NAT Operations, ICAO Annex 6, IS 121-12, Brenner.
+\end{center}
+\end{tcolorbox}
 \vspace{-3em}
 }
 
@@ -18,7 +37,7 @@
 \usepackage{background}
 \SetBgScale{1}
 \SetBgAngle{0}
-\SetBgColor{red}
+\SetBgColor{gray}
 \SetBgContents{\rule[0em]{4pt}{\textheight}}
 \SetBgHshift{-2.3cm}
 \SetBgVshift{0cm}
@@ -33,12 +52,13 @@
 \def\cornell{\@ifnextchar[{\@with}{\@without}}
 \def\@with[#1]#2#3{
 \begin{tcolorbox}[enhanced,colback=gray,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
+before skip=2pt, after skip=2pt,
 opacityframe=0,opacityback=.3,opacitybacktitle=1, opacitytext=1,
 segmentation style={black!55,solid,opacity=0,line width=3pt},
 title=#1
 ]
-\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,
-width=\textwidth,nobeforeafter]#2\end{tcolorbox}%
+\begin{tcolorbox}[colback=blue!05,colframe=blue!25,sidebyside align=top,
+width=\textwidth,nobeforeafter]#2\end{tcobluelorbox}%
 \tcblower
 \sffamily
 \begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
@@ -48,11 +68,12 @@ width=\textwidth,nobeforeafter]#2\end{tcolorbox}%
 }
 \def\@without#1#2{
 \begin{tcolorbox}[enhanced,colback=white!15,colframe=white,fonttitle=\bfseries,sidebyside=true, nobeforeafter,before=\vfil,after=\vfil,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
+before skip=2pt, after skip=2pt,
 opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,
 segmentation style={black!55,solid,opacity=0,line width=3pt}
 ]
 
-\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,
+\begin{tcolorbox}[colback=blue!05,colframe=blue!25,sidebyside align=top,
 width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
 \tcblower
 \sffamily
@@ -78,21 +99,105 @@ width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
 \maketitle
 \SetBgContents{\rule[0em]{4pt}{\textheight}}
 
-\cornell{Around what time did the concept and early ETOPS rules start to be used?}{Around 1986, with more dual engine airplanes equipped with more reliable engines (B767) being used in remote routes away from suitable alternates, where 3 and 4 engined airplanes were used without any restriction to maximum alternate distance.}
 
-\cornell{Is the term ETOPS correct? What does it stand for?}{The term ETOPS is correct. It initially stood for Extended Range Twin-Engine Operations and was widely used in the early decades. Since 2012, Annex 6 introduced the new concept of Extended Diversion Time Operations - EDTO, since having two engines was not the only parameter used for determining alternate distance limits. EDTO was not widely adopted by any regulating agencies or operators and Annex 6 itself explicitly expresses that the usage of ETOPS is acceptable. FAA has opted to reutilize the acronym to ExTended range OPerationS, and EASA uses ETOPS for the classic 2-engine case and LROPS (Long Range Operations) for 3 and 4 engines.}
+\cornellbreak{\textbf{Skybrary Extended Range Operations}}
 
-\cornell{Where is the ETOPS / EDTO information and guidance?}{ICAO Annex 6, Airplane Operation, Chapter 4, and Attachment C.}
+\cornell{Around what time did the concept and early ETOPS rules start to be used?}
+        {Around 1986, with more dual engine airplanes equipped with more reliable engines (B767) being used in remote routes away from suitable alternates, where 3 and 4 engined airplanes were used without any restriction to maximum alternate distance.}
 
-\cornell{Another research question very long for one line.}{\lipsum*[1]}
+\cornell{Is the term ETOPS correct? What does it stand for?}
+        {The term ETOPS is correct. It initially stood for Extended Range Twin-Engine Operations and was widely used in the early decades. Since 2012, Annex 6 introduced the new concept of Extended Diversion Time Operations - EDTO, since having two engines was not the only parameter used for determining alternate distance limits. EDTO was not widely adopted by any regulating agencies or operators and Annex 6 itself explicitly expresses that the usage of ETOPS is acceptable. FAA has opted to reutilize the acronym to ExTended range OPerationS, and EASA uses ETOPS for the classic 2-engine case and LROPS (Long Range Operations) for 3 and 4 engines.}
 
-\cornell{Do you want fill much more than a page}{No problem. \lipsum*[3]}
+\cornell{Where is the ETOPS / EDTO information and guidance?}
+        {ICAO Annex 6, Airplane Operation, Chapter 4, and Attachment C.}
 
-\cornell{More?}{No problem. \lipsum*[3-4]}
+\cornellbreak{\textbf{CAE Oxford Books 6 and 7}}
 
-\cornell[Last question]{This is the end?}{Yes.}
+\cornell{Why does an en route engine shutdown result in such a significant impact that it had to be regulated?}
+        {With only one engine the service ceiling of the aircraft reduces (driftdown). This results in higher fuel consumption due to lower altitude and sustained flight with OEI and lower TAS due to lower altitude. These factors amount to a reduced range after engine shutdown, not only the destination will not be reached but the available suitable alternates within the new limited range are fewer.}
+
+\cornell{What is the time limit and conditions that a twin engine airplane can operate away from a suitable alternate?}
+        {60 minutes flying time with OEI in still air.}
+
+\cornell{Why is this regulation limitation bad for airliner operations?}
+        {In remote areas, such ocean crossings, rerouting would be necessary to comply with the 60 minute alternate requirements, which would increase flight time and fuel consumption}
+
+\cornell{When is an operator considered to be ETOPS?}
+        {Whenever the ACFT is away from a distance more than 60 minutes OEI flying time in still air from a suitable alternate. This part of the route is called ETOPS Segment.}
+
+\cornell{What is the XXX number in the ETOPS XXX certification?}
+        {It is the maximum flight time, in minutes, that an operator can be away from an suitable alternate (OEI, still air) within an ETOPS region.}
+
+\cornell{What does the term Threshold Distance mean for ETOPS?}
+        {The limiting parameter for ETOPS is in flying time for OEI in still air. Alternatively, this limiting parameter can be established by the authority and operators to be in a specified distance - the Threshold Distance.}
+
+\cornell{What is the difference between ETOPS adequate aerodrome and suitable aerodrome?}
+        {Adequate aerodromes are considered by the operator during planning and dispatch and have all the required infrastructure and navigation aids for operation in case of diversion. Suitable aerodromes also comply with operational weather minimums during the part of the flight during the anticipated time of possible landing plus 1 hour after the latest possible landing time.}
+
+\cornell{What is the Critical Fuel for ETOPS?}
+        {It is the fuel required to fly from the Most Critical Point on the route to a suitable alternate.}
+
+\cornell{What are the 3 failure scenarios considered to calculate the Critical Fuel}
+        {The three scenarios are:\\
+Engine failure and driftdown (1X);\\
+Total pressurization failure (DC);\\
+Engine failure, driftdown and pressurization failure (DX).}
+
+\cornell{How is the Most Critical Point determined?}
+        {Extending the bisector from the line that joins the two suitable alternates most distant from the track, at the intersection of this extension with the track.}
+
+\cornell{What does it mean to “take additional fuel for ETOPS”?}
+        {It means that the dispatch analysis at the MCP in the ETOPS Segment determined that the onboard fuel would be lower than the required fuel to fly to one of the suitable alternates for the most limiting of the 3 scenarios.}
+
+\cornellbreak{\textbf{Brenner + Aulas TOJA Cmte. Centeno}}
+
+\cornell{O que é a estratégia ETOPS do operador e como ela influencia as rotas ETOPS?}
+        {O afastamento de um alternado adequado para operações ETOPS é definido como tempo na regulamentação. Cabe ao operador definir qual velocidade será voada no caso de falha de moto e é essa velocidade que será usada como referência na hora de determinar as distâncias máximas de cada alternado - a estratégia ETOPS do operador.}
+
+
+\cornell{Quando se entra ou sai de uma região ETOPS? Como é chamado esse ponto?}
+        {Toda vez que um ponto da rota se afasta mais de 60 minutos de um aeroporto de alternativa, a aeronave está entrando em uma região ETOPS. Esse ponto de entrada é chamado ETOPS Entry Point - EEP. Toda vez que um ponto da rota entra no alcance de 60 minutos de um aeroporto de alternativa, a aeronave está saindo de uma região ETOPS. Esse ponto de saída é chamado ETOPS Exit Point - EXP.}
+
+
+\cornell{Num EEP é preciso verificar as informações meteorológicas no aeroporto de alternativa. Caso esse aeroporto esteja abaixo dos mínimos IFR para o IAP pertinente, a aeronave pode ingressar na região ETOPS?}
+        {Não. Esse aeródromo deixa de ser um Suitable Alternate.}
 
 
 
+\cornell{E se a previsão no aeródromo de alternativa for acima dos mínimos no momento de entrada mas com previsão de condições que irão se deteriorar para abaixo dos mínimos durante o período do voo na região ETOPS?}
+        {Também não é permitido entrar na região ETOPS.}
+
+
+\cornell{O que são os ETOPS Critical Points?}
+        {São pontos na rota que estão num mesmo tempo de voo entre duas alternativas, também chamados de Equi Time Points - ETP.}
+
+
+\cornell{Os ETP levam em consideração o vento em rota?}
+        {Sim.}
+
+
+\cornell{O que precisa ser checado em cada ETP?}
+        {O ETOPS Critical Fuel. O combustível a bordo da aeronave deve ser superior ao requerido pelo ETOPS Critical Fuel.}
+
+
+\cornell{Como é determinado o ETOPS Critical Fuel?}
+        {Para cada ETP na rota são consideradas 3 situações distintas:
+          \begin{itemize}
+            \item Apenas falha de motor - 1X;
+            \item Apenas despressurização - D0;
+            \item Falha de motor e despressurização simultâneas - DX.
+          \end{itemize}
+          Para cada situação, o combustível mínimo deve ser suficiente para:
+          \begin{itemize}
+            \item Prosseguir para a alternativa;
+            \item Executar um procedimento para pouso;
+            \item Circular por 15 minutos;
+            \item Executar outro procedimento para pouso.
+          \end{itemize}
+Dos 3 cenários, o que precisar de mais combustível será o que determina o ETOPS Critical Fuel.
+}
+
+\cornell{O que é ETOPS Additional Fuel?}
+        {Se o combustível normal no ETP for menor que o ETOPS Critical Fuel requerido, a diferença deve ser adicionada como combustível extra - O ETOPS Additional Fuel.}
 
 \end{document}

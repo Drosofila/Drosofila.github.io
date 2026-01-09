@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.7)  8 JAN 2026 13:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.7)  9 JAN 2026 09:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -228,15 +228,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box64
 \tcb@temp=\box65
 \tcb@temp=\box66
-) (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
@@ -353,20 +345,20 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (./da42vi.aux)
 \openout1 = `da42vi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count294
@@ -421,22 +413,27 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 102.
+(Font)              <12> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 102.
+(Font)              <8> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 102.
+(Font)              <6> on input line 169.
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 112.
+(Font)              <7> on input line 180.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 112.
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 135.
+(Font)              <5> on input line 180.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 203.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [1
+)
+Underfull \hbox (badness 1874) in paragraph at lines 216--216
+[]\OT1/cmss/m/n/10 IFR - Pre-ci-sion and No-
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./da42vi.aux)
  ***********
@@ -445,15 +442,15 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17155 strings out of 476182
- 374483 string characters out of 5795596
- 1955975 words of memory out of 5000000
- 38881 multiletter control sequences out of 15000+600000
- 562959 words of font info for 52 fonts, out of 8000000 for 9000
+ 16753 strings out of 476182
+ 367271 string characters out of 5795596
+ 1957975 words of memory out of 5000000
+ 38494 multiletter control sequences out of 15000+600000
+ 562943 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,12n,107p,520b,1012s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,12n,107p,440b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/drosofila/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on da42vi.pdf (2 pages, 44898 bytes).
+Output written on da42vi.pdf (2 pages, 42812 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

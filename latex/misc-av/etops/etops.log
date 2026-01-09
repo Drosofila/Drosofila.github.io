@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.7)  8 JAN 2026 00:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.7)  9 JAN 2026 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -345,20 +345,20 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (./etops.aux)
 \openout1 = `etops.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count294
@@ -413,106 +413,106 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 99.
+(Font)              <12> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 99.
+(Font)              <8> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 99.
+(Font)              <6> on input line 169.
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 106.
+(Font)              <7> on input line 176.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 106.
+(Font)              <5> on input line 176.
 
-Underfull \hbox (badness 3333) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 EDTO in-for-ma-tion and
+Underfull \hbox (badness 2932) in paragraph at lines 182--182
+[]\OT1/cmss/m/n/10 Where is the ETOPS /
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 117--117
-\OT1/cmr/m/n/10 gine shut-down re-sult in
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+\OT1/cmss/m/n/10 EDTO in-for-ma-tion and
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 190--190
+\OT1/cmss/m/n/10 gine air-plane can op-er-ate
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
-[]\OT1/cmr/m/n/10 What does the term
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]\OT1/cmss/m/n/10 What does the term
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 135--135
-\OT1/cmr/m/n/10 tween ETOPS ad-e-quate
+Underfull \hbox (badness 3601) in paragraph at lines 202--202
+\OT1/cmss/m/n/10 Thresh-old Dis-tance mean
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 135--135
-\OT1/cmr/m/n/10 aero-drome and suit-able
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]\OT1/cmss/m/n/10 What is the dif-fer-ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+\OT1/cmss/m/n/10 aero-drome and suit-able
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 217--217
+[]\OT1/cmss/m/n/10 How is the Most Crit-i-cal
  []
 
 [2]
-Underfull \hbox (badness 1852) in paragraph at lines 150--150
-[]\OT1/cmr/m/n/10 What does it mean to
+Underfull \hbox (badness 1603) in paragraph at lines 233--233
+[]\OT1/cmss/m/n/10 Num EEP ^^Se pre-ciso ver-
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 155--155
-[]\OT1/cmr/m/n/10 O que ^^Se a es-trat^^Segia
+Underfull \hbox (badness 2020) in paragraph at lines 233--233
+\OT1/cmss/m/n/10 i-ficar as in-forma^^Xc~oes me-
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 155--155
-\OT1/cmr/m/n/10 ETOPS do op-er-ador e
+Underfull \hbox (badness 4205) in paragraph at lines 233--233
+\OT1/cmss/m/n/10 te-o-rol^^Sogicas no aero-porto
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 159--159
-\OT1/cmr/m/n/10 Como ^^Se chamado esse
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+[]\OT1/cmss/m/n/10 E se a pre-vis~ao no
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 163--163
-\OT1/cmr/m/n/10 aero-porto es-teja abaixo
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+\OT1/cmss/m/n/10 aer^^Sodromo de al-ter-na-
  []
 
 
-Underfull \hbox (badness 5908) in paragraph at lines 163--163
-\OT1/cmr/m/n/10 ave pode in-gres-sar na
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]\OT1/cmss/m/n/10 Como ^^Se de-ter-mi-nado o
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-[]\OT1/cmr/m/n/10 E se a pre-vis~ao no
- []
-
-
-Underfull \hbox (badness 6978) in paragraph at lines 168--168
-\OT1/cmr/m/n/10 que ir~ao se de-te-ri-o-rar
- []
-
-[3]
-Underfull \hbox (badness 2351) in paragraph at lines 198--198
-[]\OT1/cmr/m/n/10 Como ^^Se de-ter-mi-nado o
- []
-
-[4] (./etops.aux)
+[3] [4] (./etops.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16788 strings out of 476182
- 367505 string characters out of 5795596
- 1959975 words of memory out of 5000000
- 38532 multiletter control sequences out of 15000+600000
+ 16789 strings out of 476182
+ 367524 string characters out of 5795596
+ 1960975 words of memory out of 5000000
+ 38533 multiletter control sequences out of 15000+600000
  562937 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,12n,107p,714b,1009s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,12n,107p,714b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/drosofila/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on etops.pdf (4 pages, 69910 bytes).
+Output written on etops.pdf (4 pages, 53275 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
